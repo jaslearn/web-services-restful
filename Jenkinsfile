@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
       steps {
         sh 'chmod a+x mvnw'
-        sh './mvnw spring-boot:build:image -DskipTests'
+        sh './mvnw spring-boot:build-image -DskipTests'
       }
 
          
