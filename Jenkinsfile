@@ -5,7 +5,7 @@ pipeline {
     stage('Checkout') {
       steps {
         // Get some code from a GitHub repository
-        git branch: "main", url: 'https://github.com/jaslearn/SpringRest.git'
+        git branch: "main", url: 'https://github.com/jaslearn/web-services-restful.git'
       }
     }
         stage('Build') {
