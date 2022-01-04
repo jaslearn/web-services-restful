@@ -81,6 +81,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			<version>2.6.2</version>
+				<configuration>
+					<image>
+						<name>jaslearn/jl-${project.artifactId}:${project.version}</name>
+					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+				</configuration>	
 			</plugin>
 		</plugins>
 	</build>
